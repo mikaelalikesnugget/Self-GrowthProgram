@@ -51,6 +51,13 @@
         </div>
     </nav>
 
+    <!-- Promotional Banner -->
+    <div class="promo-banner">
+        <h2>Your Complete Wellness Companion</h2>
+        <p class="promo-subtitle">AI-powered guidance tailored to your unique journey</p>
+        <p>Transform your life with personalized support for mental health, fitness, nutrition, and better sleep</p>
+    </div>
+
     <!-- Hero Section -->
     <section id="home" class="hero">
         <div class="hero-content">
@@ -59,6 +66,101 @@
             <button class="cta-button" onclick="document.getElementById('programs').scrollIntoView({behavior: 'smooth'})">Explore Programs</button>
         </div>
         <div class="hero-background"></div>
+    </section>
+
+    <!-- Carousel Section -->
+    <section class="carousel-section">
+        <div class="carousel-container">
+            <h2 class="carousel-title">What You Can Do With Us</h2>
+            <p class="carousel-subtitle">Discover the transformative benefits of our wellness platform</p>
+            
+            <div class="carousel-wrapper">
+                <div class="carousel">
+                    <div class="carousel-slide fade">
+                        <img src="Pictures/mind.png" alt="Mental Wellness">
+                        <div class="carousel-caption">
+                            <h3>Manage Your Mental Health</h3>
+                            <p>Stress relief and mindfulness at your fingertips</p>
+                        </div>
+                    </div>
+                    <div class="carousel-slide fade">
+                        <img src="Pictures/fitness.png" alt="Fitness Journey">
+                        <div class="carousel-caption">
+                            <h3>Achieve Your Fitness Goals</h3>
+                            <p>Personalized workout plans tailored to your lifestyle</p>
+                        </div>
+                    </div>
+                    <div class="carousel-slide fade">
+                        <img src="Pictures/wrkout.png" alt="Workout">
+                        <div class="carousel-caption">
+                            <h3>Transform Through Exercise</h3>
+                            <p>Expert guidance for every fitness level</p>
+                        </div>
+                    </div>
+                    <div class="carousel-slide fade">
+                        <img src="Pictures/Nutri.png" alt="Nutrition">
+                        <div class="carousel-caption">
+                            <h3>Eat Better, Live Better</h3>
+                            <p>Smart nutrition guidance for your unique needs</p>
+                        </div>
+                    </div>
+                    <div class="carousel-slide fade">
+                        <img src="Pictures/meal.png" alt="Meal Planning">
+                        <div class="carousel-caption">
+                            <h3>Smart Meal Planning</h3>
+                            <p>Customized meal recommendations just for you</p>
+                        </div>
+                    </div>
+                    <div class="carousel-slide fade">
+                        <img src="Pictures/sleep.png" alt="Better Sleep">
+                        <div class="carousel-caption">
+                            <h3>Sleep Like Never Before</h3>
+                            <p>Science-backed sleep improvement techniques</p>
+                        </div>
+                    </div>
+                    <div class="carousel-slide fade">
+                        <img src="Pictures/tagrt.png" alt="Goal Setting">
+                        <div class="carousel-caption">
+                            <h3>Set & Achieve Goals</h3>
+                            <p>Track your progress and reach new milestones</p>
+                        </div>
+                    </div>
+                    <div class="carousel-slide fade">
+                        <img src="Pictures/msg.png" alt="Support">
+                        <div class="carousel-caption">
+                            <h3>Get Personal Support</h3>
+                            <p>24/7 guidance and encouragement from our AI coaches</p>
+                        </div>
+                    </div>
+                    <div class="carousel-slide fade">
+                        <img src="Pictures/sp.png" alt="Wellness">
+                        <div class="carousel-caption">
+                            <h3>Complete Wellness</h3>
+                            <p>All-in-one platform for your health journey</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Carousel Controls -->
+                <button class="carousel-prev" onclick="changeSlide(-1)">❮</button>
+                <button class="carousel-next" onclick="changeSlide(1)">❯</button>
+            </div>
+
+            <!-- Carousel Indicators -->
+            <div class="carousel-indicators">
+                <span class="indicator" onclick="currentSlide(1)"></span>
+                <span class="indicator" onclick="currentSlide(2)"></span>
+                <span class="indicator" onclick="currentSlide(3)"></span>
+                <span class="indicator" onclick="currentSlide(4)"></span>
+                <span class="indicator" onclick="currentSlide(5)"></span>
+                <span class="indicator" onclick="currentSlide(6)"></span>
+                <span class="indicator" onclick="currentSlide(7)"></span>
+                <span class="indicator" onclick="currentSlide(8)"></span>
+                <span class="indicator" onclick="currentSlide(9)"></span>
+            </div>
+
+            <p class="carousel-message"><i>One smart companion for eating well, moving more, feeling supported, and sleeping deeply.</i></p>
+        </div>
     </section>
 
     <!-- About Section -->
@@ -221,6 +323,29 @@
         </div>
     </section>
 
+    <!-- Feedback Section -->
+    <section class="feedback-section">
+        <div class="feedback-container">
+            <h2>We Want to Hear From You!</h2>
+            <p class="feedback-subtitle">Your feedback helps us improve and serve you better</p>
+            
+            <form class="feedback-form" id="feedbackForm">
+                <div class="form-group">
+                    <input type="text" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" placeholder="Your Email" required>
+                </div>
+                <div class="form-group">
+                    <textarea placeholder="Share your thoughts, suggestions, or feedback..." rows="5" required></textarea>
+                </div>
+                <button type="submit" class="feedback-button">Send Feedback</button>
+            </form>
+            
+            <p class="feedback-note">Thank you for taking the time to share your thoughts with us!</p>
+        </div>
+    </section>
+
     <!-- Contact Section -->
     <section id="contact" class="contact">
         <div class="contact-container">
@@ -247,6 +372,54 @@
     <button id="backToTopBtn" class="back-to-top" onclick="scrollToTop()">↑ Back to Top</button>
 
     <!-- Footer -->
+    <!-- Chatbot Widget -->
+    <div class="chatbot-widget" id="chatbotWidget">
+        <div class="chatbot-header">
+            <div class="character-info">
+                <div class="character-avatar">
+                    <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                        <!-- Body -->
+                        <ellipse cx="50" cy="70" rx="25" ry="28" fill="#ec4899"/>
+                        <!-- Head -->
+                        <circle cx="50" cy="35" r="20" fill="#f472b6"/>
+                        <!-- Left arm -->
+                        <rect x="20" y="55" width="12" height="30" rx="6" fill="#ec4899"/>
+                        <!-- Right arm -->
+                        <rect x="68" y="55" width="12" height="30" rx="6" fill="#ec4899"/>
+                        <!-- Left foot -->
+                        <ellipse cx="40" cy="98" rx="7" ry="5" fill="#1e293b"/>
+                        <!-- Right foot -->
+                        <ellipse cx="60" cy="98" rx="7" ry="5" fill="#1e293b"/>
+                        <!-- Eyes -->
+                        <circle cx="44" cy="32" r="2.5" fill="#1e293b"/>
+                        <circle cx="56" cy="32" r="2.5" fill="#1e293b"/>
+                        <!-- Smile -->
+                        <path d="M 44 38 Q 50 41 56 38" stroke="#1e293b" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+                        <!-- Heart on chest -->
+                        <path d="M 50 60 L 53 57 Q 55 55 55 53 Q 55 51 50 51 Q 45 51 45 53 Q 45 55 47 57 Z" fill="#fbbf24" opacity="0.8"/>
+                    </svg>
+                </div>
+                <div class="character-header">
+                    <h3>Wellness Buddy</h3>
+                    <p class="character-tagline">Your wellness companion 💖</p>
+                </div>
+            </div>
+            <button class="chatbot-close" onclick="toggleChatbot()">×</button>
+        </div>
+        <div class="chatbot-messages" id="chatbotMessages">
+            <div class="bot-message">
+                <p>Hey there! 👋 I'm Wellness Buddy! Ready to help you on your wellness journey? Ask me anything about our programs, features, or how to get started!</p>
+            </div>
+        </div>
+        <div class="chatbot-input-area">
+            <input type="text" id="userInput" placeholder="Chat with me..." onkeypress="handleEnter(event)">
+            <button onclick="sendMessage()">Send</button>
+        </div>
+    </div>
+
+    <!-- Chatbot Toggle Button -->
+    <button class="chatbot-toggle" id="chatbotToggle" onclick="toggleChatbot()">💖 Chat with Buddy</button>
+
     <footer class="footer">
         <div class="footer-content">
             <p>&copy; 2026 Wellness Hub. All rights reserved.</p>
