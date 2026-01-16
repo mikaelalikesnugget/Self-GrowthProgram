@@ -58,8 +58,30 @@ body {
 
 .logo h1 {
     color: var(--white);
-    font-size: 1.8rem;
+    font-size: 0.8rem;
     font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.logo-svg {
+    height: 50px;
+    width: 50px;
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.2));
+}
+
+.logo-text {
+    color: var(--white);
+    font-size: 1.1rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
 }
 
 .nav-menu {
@@ -232,6 +254,33 @@ body {
 .mission-box p {
     font-size: 1.1rem;
     line-height: 1.8;
+}
+
+.video-promo-inline {
+    background: rgba(99, 102, 241, 0.08);
+    padding: 3rem 2rem;
+    border-radius: 15px;
+    margin-top: 3rem;
+    text-align: center;
+}
+
+.video-promo-inline h3 {
+    font-size: 1.8rem;
+    color: var(--text-dark);
+    margin-bottom: 1rem;
+}
+
+.video-promo-inline .video-subtitle {
+    color: var(--text-light);
+    margin-bottom: 2rem;
+    display: block;
+    font-size: 1rem;
+}
+
+.video-promo-inline .video-wrapper {
+    position: relative;
+    max-width: 600px;
+    margin: 0 auto;
 }
 
 /* ===========================
@@ -445,6 +494,53 @@ body {
 .why-card p {
     color: var(--text-light);
     font-size: 0.95rem;
+}
+
+/* ===========================
+   Video Promo Section
+   =========================== */
+
+.video-promo {
+    padding: 5rem 2rem;
+    background: linear-gradient(135deg, rgba(99, 102, 241, 0.05), rgba(236, 72, 153, 0.05));
+}
+
+.video-container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.video-promo h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: var(--text-dark);
+}
+
+.video-subtitle {
+    text-align: center;
+    font-size: 1.1rem;
+    color: var(--text-light);
+    margin-bottom: 3rem;
+}
+
+.video-wrapper {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+}
+
+.video-wrapper video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
 }
 
 /* ===========================

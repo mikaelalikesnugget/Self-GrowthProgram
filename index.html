@@ -11,7 +11,35 @@
     <nav class="navbar">
         <div class="nav-container">
             <div class="logo">
-                <h1>🌟 Wellness Hub</h1>
+                <svg class="logo-svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                    <!-- Background circle -->
+                    <circle cx="50" cy="50" r="45" fill="#ffffff" opacity="0.15"/>
+                    
+                    <!-- Flowing wellness wave -->
+                    <path d="M 20 50 Q 35 35, 50 50 T 80 50" 
+                          fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round" opacity="0.9"/>
+                    
+                    <!-- Top - Rising growth -->
+                    <path d="M 45 50 L 40 35 L 50 40 L 60 35 L 55 50" 
+                          fill="#ffffff" opacity="0.85" stroke="#ffffff" stroke-width="1.5" stroke-linejoin="round"/>
+                    
+                    <!-- Wellness droplet in center -->
+                    <path d="M 50 55 Q 45 60, 45 67 Q 45 72, 50 75 Q 55 72, 55 67 Q 55 60, 50 55 Z" 
+                          fill="#6366f1" opacity="0.9" stroke="#ffffff" stroke-width="1"/>
+                    
+                    <!-- Radiating wellness lines -->
+                    <g stroke="#ffffff" stroke-width="1.5" opacity="0.6" stroke-linecap="round">
+                        <line x1="50" y1="15" x2="50" y2="25"/>
+                        <line x1="50" y1="75" x2="50" y2="85"/>
+                        <line x1="15" y1="50" x2="25" y2="50"/>
+                        <line x1="75" y1="50" x2="85" y2="50"/>
+                    </g>
+                    
+                    <!-- Subtle corner accents -->
+                    <circle cx="30" cy="30" r="2" fill="#ffffff" opacity="0.4"/>
+                    <circle cx="70" cy="70" r="2" fill="#ffffff" opacity="0.4"/>
+                </svg>
+                <span class="logo-text">Wellness Hub</span>
             </div>
             <ul class="nav-menu">
                 <li><a href="#home" class="nav-link">Home</a></li>
@@ -64,6 +92,18 @@
             <div class="mission-box">
                 <h3>Our Mission</h3>
                 <p>To make wellness guidance more accessible, affordable, and supportive for young people by combining cutting-edge AI technology with practical, easy-to-follow advice.</p>
+            </div>
+
+            <!-- Video Promo Section -->
+            <div class="video-promo-inline">
+                <h3>Wellness Hub Promo</h3>
+                <p class="video-subtitle">See how Wellness Hub can transform your wellness journey</p>
+                <div class="video-wrapper">
+                    <video controls style="width: 100%; max-width: 600px; border-radius: 15px;">
+                        <source src="./Promo%20Video/Wellness%20Hub%20Promo.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
             </div>
         </div>
     </section>
